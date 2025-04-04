@@ -17,10 +17,12 @@
      */
     class IGameModule {
 
+        public:
             virtual ~IGameModule() = default;
 
             virtual void init() = 0;
             virtual void reset() = 0;
+            virtual void close() = 0;
             virtual void launch() = 0;
             virtual void update(utils::Event event) = 0;
 
@@ -28,6 +30,7 @@
             virtual int getScore() const = 0;
             virtual std::string getGameName() const = 0;
             virtual std::vector<utils::DrawableObjects> getDrawableObjects() const = 0;
+            virtual utils::Metadata getMetadata() const = 0;
 
     };
 
@@ -37,9 +40,6 @@
 
  * retirer nles attributs des interfaces
  * faire un namespace avec tout ce qui est relatif au core
- ? considérer le menu comme un jeu
  ? implémenter un système de grille pour l'affichage
- ? faire des metadata pour les libs
- ? faire un repo commun pour le core
 
 */

@@ -26,10 +26,21 @@
                 Color color;
 
             public:
-                void setPos(utils::Vector2i position);
-                utils::Vector2i getPos() const;
-                void setDimensions(utils::Vector2i dimensions);
-                utils::Vector2i getDimensions() const;
+                void setPos(utils::Vector2i position) {
+                    this->pos = position;
+                }
+
+                utils::Vector2i getPos() const {
+                    return this->pos;
+                }
+
+                void setDimensions(utils::Vector2i dimensions) {
+                    this->dimensions = dimensions;
+                }
+
+                utils::Vector2i getDimensions() const {
+                    return this->dimensions;
+                }
 
         };
     }
