@@ -20,7 +20,7 @@
             W, A, S, D, Z, Q, C, B, E,
             RESTART, GRAPHICS_LIBRARY, GAME_LIBRARY, // restart, next graphics library, next game
             MENU, EXIT, // go back to the menu, exit the program
-            MOUSE_CLICK_RIGHT, MOUSE_CLICK_LEFT
+            MOUSE_CLICK_RIGHT, MOUSE_CLICK_LEFT, NONE
         };
 
         /**

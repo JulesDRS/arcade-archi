@@ -24,9 +24,23 @@
                 int g;
                 int b;
 
-                Color(int a, int r, int g, int b);
-                void setColor(int a, int r, int g, int b);
-                Color getColor() const;
+                utils::Color::Color(int a, int r, int g, int b) {
+                    this->a = a;
+                    this->r = r;
+                    this->g = g;
+                    this->b = b;
+                }
+
+                void utils::Color::setColor(utils::Color color) {
+                    this->a = color.a;
+                    this->r = color.r;
+                    this->g = color.g;
+                    this->b = color.b;
+                }
+                
+                utils::Color utils::Color::getColor() const {
+                    return {this->a, this->r, this->g, this->b};
+                }
 
         };
 

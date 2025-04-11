@@ -22,7 +22,7 @@
         public:
             virtual ~IGraphicalModule() = default;
 
-            virtual void init() = 0;
+            virtual void start() = 0;
             virtual void close() = 0;
             virtual std::string getName() const = 0;
             virtual utils::Metadata getMetadata() const = 0;
@@ -31,7 +31,6 @@
             virtual void refresh(std::vector<utils::DrawableObjects> drawableObjects) = 0;
 
             virtual utils::Event getEvent() const = 0;
-            virtual bool isKeyPressed() const = 0;
 
     };
 

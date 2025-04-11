@@ -23,13 +23,12 @@
             protected:
                 utils::Vector2i pos;
                 utils::Vector2i dimensions;
-                Color color;
+                utils::Color color;
 
             public:
                 void setPos(utils::Vector2i position) {
                     this->pos = position;
                 }
-
                 utils::Vector2i getPos() const {
                     return this->pos;
                 }
@@ -37,9 +36,15 @@
                 void setDimensions(utils::Vector2i dimensions) {
                     this->dimensions = dimensions;
                 }
-
                 utils::Vector2i getDimensions() const {
                     return this->dimensions;
+                }
+
+                void setColor(utils::Color newColor) {
+                    this->color = newColor;
+                }
+                utils::Color getColor() const {
+                    return this->color;
                 }
 
         };
